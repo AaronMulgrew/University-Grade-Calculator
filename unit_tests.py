@@ -36,6 +36,10 @@ class FlaskEndpointsTest(unittest.TestCase):
         # assert the status code of the response
         self.assertEqual(result.status_code, 200) 
 
+    def test_home_post(self):
+
+        result = self.app.post('/', data=dict({'module': [u'75', u'55', u'', u'', u'', u'', u'', u''], 'weight': [u'60', u'50', u'', u'', u'', u'', u'', u'']}))
+        self.assertEqual(result.status_code, 200)
 
 if __name__ == '__main__':
     unittest.main()
