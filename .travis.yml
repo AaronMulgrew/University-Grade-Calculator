@@ -6,5 +6,7 @@ install:
   - pip install Flask
   - pip install flask_cors
   - pip install wtforms
+  - pip install coveralls
 script:
   - python unit_tests.py
+after_success: coveralls
