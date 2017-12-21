@@ -5,5 +5,6 @@ cache: pip
 install:
   - pip install Flask
   - pip install flask_cors
+  - pip install wtforms
 script:
   - python -m unit_tests.py
