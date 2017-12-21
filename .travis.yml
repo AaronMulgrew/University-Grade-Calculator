@@ -7,4 +7,4 @@ install:
   - pip install flask_cors
   - pip install wtforms
 script:
-  - python -m unit_tests.py
+  - python unit_tests.py
