@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{a9501196-031e-42ff-ac4e-65c0cd8dc744}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>unit_tests.py</StartupFile>
+    <StartupFile>Uni_Grades_Calculator.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
