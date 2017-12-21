@@ -17,6 +17,8 @@ class BusinessForm(Form):
     grades = FieldList(FormField(ReusableForm), min_entries=8, max_entries=10)
 
 def CalcOverall(Weightings, Grades):
+    if (type(Weightings) != list or type(Grades) != list):
+        return False
     gradewithWeight = []
     overallWeighting = 0
     gradeWeightInt = 0
