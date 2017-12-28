@@ -1,6 +1,6 @@
 
-from flask import Flask, render_template, flash, request
-from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField, FieldList, FormField
+from flask import Flask, render_template, request
+from wtforms import Form, TextField, TextAreaField, validators, SubmitField, FieldList, FormField
  
 # App config.
 #DEBUG = True
@@ -27,7 +27,7 @@ def CalcOverall(Weightings, Grades):
         # skip element if cannot convert to float
         try:
             float(Grades[i])
-        except:
+        except ValueError:
             continue
         print Weightings[i]
         print Grades[i]
