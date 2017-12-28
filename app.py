@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template, request
-from wtforms import Form, TextField, TextAreaField, validators, SubmitField, FieldList, FormField
+from wtforms import Form, TextField, validators, FieldList, FormField
  
 # App config.
 #DEBUG = True
